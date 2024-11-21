@@ -29,3 +29,17 @@ Access granted
 
 
 """
+import os
+import time
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+
+while not password == "12345" or not username == "admin":
+    print("Access Denied")
+    time.sleep(1)
+    os.system('cls')
+    username = input("Enter Username: ")
+    password = input("Enter Password: ")
+else:
+    print("Access Granted")

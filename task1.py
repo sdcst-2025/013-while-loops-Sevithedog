@@ -1,7 +1,7 @@
 #! python3
 
 """
-Count by 2's and display all the numbers, 1 on each line.
+ byCount 2's and display all the numbers, 1 on each line.
 Continue until the current value is 20
 You will need to keep track of a current value, and modify
 or update the current value through every iteration of the
@@ -25,3 +25,7 @@ Example:
 10
 ...
 """
+x = 0
+while not x == 20:
+    x = x+2 
+    print(f"{x}")

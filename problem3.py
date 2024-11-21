@@ -13,3 +13,13 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+f = 1 
+f2 = 1
+print(f"{f} ", end = "")
+while f <= 100:
+    print(f"{f2} ", end = "")
+    fhold = f2
+    f2 = f + f2
+    f = fhold
+
+    

@@ -17,3 +17,13 @@ example:
 Enter a number: 4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+n = float(input("Enter a number: "))
+np = n 
+count = 1
+while not np == n*12:
+    print(f"{int(np)},", end="")
+    count = count + 1
+    np = (n*count)
+else:
+    print(f"{int(np)}", end="")
+    exit()

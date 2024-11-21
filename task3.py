@@ -18,4 +18,14 @@ That is not an even integer
 Enter number:4
 That is an even integer
 
-"""
+""" 
+import os
+import time
+n = float(input("Enter a number: "))
+while n%2 != 0 or n != int(n):
+    print("That is not an even integer.")
+    time.sleep(1)
+    os.system('cls')
+    n = float(input("Enter a number: "))
+else:
+    print("That is an even integer!")
